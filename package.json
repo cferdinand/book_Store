@@ -4,8 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-db": "psql postgres -a -f ./db/schema.sql",
+    "seed-db": "node -r dotenv/config db/seedScripts/index.js",
+    "start-dev": "nodemon -r dotenv/config server/index.js",
+    "start": "node server/index.js",
+    "build": "webpack -d --watch --mode development",
+    "build-prod": "webpack -p --mode production"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "flickity": "^2.2.1",
+    "node": "^13.10.1",
+    "nodemon": "^2.0.2",
+    "pg": "^7.18.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
