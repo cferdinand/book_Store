@@ -1,0 +1,76 @@
+body {
+  width: auto;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.app {
+  width: 100%;
+}
+.app-container {
+  height: 100%;
+  width: auto;
+}
+.nav-container {
+  width: 100%;
+  height: 15%;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.nav-browse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 15%;
+  margin-left: 35px;
+}
+hr.nav-rule {
+  height: 18px;
+}
+
+.nav-users-menu {
+  display: flex;
+  flex-direction: row;
+  width: 15%;
+  align-items: center;
+  margin-right: 35px;
+}
+
+.nav-users-menu hr {
+  margin: 0 30px;
+}
+
+.nav-user {
+  display: flex;
+}
+
+.user-image {
+  height: 22px;
+  width: 22px;
+  border-radius: 11px;
+}
+
+.user-notification {
+  background-color: red;
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+  z-index: 1;
+  margin-left: -7px;
+  margin-top: -4px;
+  border: 2px solid white;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-menu span {
+  padding-left: 8px;
+  font-size: 14px;
+}
