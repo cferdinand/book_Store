@@ -18,7 +18,7 @@ const Nav = () => {
         </div>
         <div className="nav-users-menu">
           <div className="nav-user">
-            <img src="./images/GitHub.jpeg" className="user-image" />
+            <img src="./images/GitHub.jpeg" className="user-image small-icon" />
             <div className="user-notification"></div>
           </div>
           <hr className="nav-rule" />
