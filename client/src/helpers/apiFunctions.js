@@ -5,6 +5,16 @@ const apiFunctions = {
     return axios.get("/popular").then(({ data }) => {
       return data;
     });
+  },
+  getAuthors: () => {
+    return axios.get("/authors").then(({ data }) => {
+      return data;
+    });
+  },
+  getBooks: () => {
+    return axios.get("/books").then(({ data }) => {
+      return data;
+    });
   }
 };
 

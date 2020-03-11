@@ -18,7 +18,7 @@ module.exports = {
   getPopularBooks: () => {
     return db
       .query(
-        `SELECT id,book_name,author,photo,book_description FROM books WHERE popular=true`
+        `SELECT id,book_name,author,photo,book_description,ratings,votes FROM books WHERE popular=true`
       )
       .then(({ rows }) => {
         return rows;
