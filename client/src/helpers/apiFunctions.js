@@ -1,8 +1,10 @@
 const axios = require("axios");
 
 const apiFunctions = {
-  getBooks: () => {
-    return axios.get();
+  getPopular: () => {
+    return axios.get("/popular").then(({ data }) => {
+      return data;
+    });
   }
 };
 
