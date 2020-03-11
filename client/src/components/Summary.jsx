@@ -3,9 +3,11 @@ import React from "react";
 const summary = ({ desc }) => {
   return (
     <div className="summary-popup">
-      <h5 className="summary-heading">Summary</h5>
-      <p>{desc}</p>
-      <button>Read More</button>
+      <div className="summary-info">
+        <p className="summary-heading">SUMMARY</p>
+        <p className="summary-desc">{desc}</p>
+        <button className="summary-btn btn">Read More</button>
+      </div>
     </div>
   );
 };
