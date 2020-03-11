@@ -348,8 +348,8 @@ ul {
 .summary-popup {
   display: none;
   position: absolute;
-  left: 159px;
-  opacity: 0.6;
+  left: 171px;
+  opacity: 0.8;
   top: 2em;
   font-size: 14px;
   text-align: center;
@@ -408,6 +408,7 @@ ul {
   margin-right: 30px;
   margin-bottom: 40px;
 }
+
 .transparent {
   opacity: 1;
   z-index: 10;
@@ -425,6 +426,27 @@ ul {
   border: 2px solid white;
   border-radius: 5px 5px;
   box-shadow: 1px 1px 7px -2px grey;
+}
+
+.dotted-menu {
+  height: 5px;
+  position: relative;
+  grid-column-start: 2;
+  justify-self: flex-end;
+  right: 28px;
+  top: 20px;
+}
+
+.dotted-menu:hover {
+  cursor: pointer;
+}
+
+.dotted-menu li {
+  display: list-item;
+  height: 7px;
+  color: #afaeae;
+  width: 3px;
+  font-size: 13px;
 }
 
 .book-photo {
@@ -449,8 +471,37 @@ ul {
   align-self: center;
   padding-right: 20px;
 }
+
+.book-view.book-name {
+  margin: 0 0 8px;
+  font-size: 25px;
+}
+
+.book-author {
+  margin: 0 0 12px;
+  font-size: 11px;
+  color: #a5a3a3;
+}
+
+.book-meta {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.book-meta .MuiRating-sizeSmall {
+  font-size: 0.9rem;
+}
+
+.book-rating {
+  font-size: 12px;
+  padding-left: 12px;
+  color: #bdbbbb;
+}
+
 .description {
   word-wrap: break-word;
+  color: #a5a3a3;
 }
 
 .book-likes {
@@ -466,6 +517,8 @@ ul {
   height: 1px;
   width: 96%;
   margin-right: 0;
+  background-color: #efefef;
+  border: 0;
 }
 
 .liker {
