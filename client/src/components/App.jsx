@@ -11,6 +11,7 @@ const App = () => {
   const [books, setBooks] = useState([]);
   const [authors, setAuthors] = useState([]);
 
+  //Make all initial calls for data from the api
   useEffect(() => {
     let tempPopular = apiFunctions.getPopular();
     let tempBooks = apiFunctions.getBooks();

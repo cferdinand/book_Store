@@ -5,10 +5,10 @@ import Stars from "@material-ui/lab/Rating";
 
 const BooksCard = ({ book }) => {
   const ListOfLikes = () => {
-    return book.likes.map((likes, idx) => {
-      if (idx <= 2) {
-        return <img className="liker-pics" src={likes.photo}></img>;
-      }
+    //Only show 3 images no matter the num of likes
+    let result = book.likes.slice(0, 3);
+    return result.map((likes, idx) => {
+      return <img className="liker-pics" src={likes.photo}></img>;
     });
   };
 
@@ -20,9 +20,9 @@ const BooksCard = ({ book }) => {
       </div>
       <div className="book-content book-view">
         <div className="book-menu dotted-menu book-view">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li className="placeholder dotted-menu-list"></li>
+          <li className="placeholder dotted-menu-list"></li>
+          <li className="placeholder dotted-menu-list"></li>
         </div>
         <div className="book-info book-view">
           <div className="name-author book-view">
