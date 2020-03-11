@@ -9,8 +9,8 @@
     "seed-db": "node -r dotenv/config db/seedScripts/index.js",
     "start-dev": "nodemon -r dotenv/config server/index.js",
     "start": "node server/index.js",
-    "build": "webpack -d --watch --mode development",
-    "build-prod": "webpack -p --mode production"
+    "build-dev": "webpack -d --watch --mode development",
+    "build": "webpack -p --mode production"
   },
   "author": "",
   "license": "ISC",
